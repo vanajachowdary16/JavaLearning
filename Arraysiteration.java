@@ -26,6 +26,12 @@ public class Arraysiteration {
          for(int i=cousins.length-1; i>=0; i--){
             System.out.println(cousins[i]);
          }
+
+         //for each or enhanced for loop
+
+         for(int i : numbers){
+            System.out.println(i);
+         }
     }
 }
 
