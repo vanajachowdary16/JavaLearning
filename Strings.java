@@ -27,5 +27,10 @@ class Main {
     System.out.println("next\nline ");
     System.out.println("test\ttab");
     System.out.println(s.lastIndexOf("a"));
+
+    String str="Automation";
+    StringBuilder reversedString = new StringBuilder(str).reverse();
+    System.out.println("reversed string is - "+reversedString);
+    
 }
 }
