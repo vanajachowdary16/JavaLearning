@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Streams {
@@ -40,6 +41,20 @@ System.out.println("practicing more*********************************************
 
     boolean flag = newStream.anyMatch(s->s.equalsIgnoreCase("Adam"));
     System.out.println(flag);
+
+
+     System.out.println("/////////////collect////////////");
+
+      List<String> ls =Stream.of("Abhijeet","Don","Alekhya","Adam","Ram").filter(s->s.endsWith("a")).map(s->s.toUpperCase()).collect(Collectors.toList());
+    System.out.println(ls.get(0));
+
+    List<Integer> values = Arrays.asList(6,2,3,1,4,5,2,3,4,6,7,8,9,10);
+
+    values.stream().distinct().sorted().forEach(s->System.out.println(s));
+
+    List<Integer> li= values.stream().distinct().sorted().collect(Collectors.toList());
+
+    System.out.println(li.get(3));
 
 }
 
