@@ -1,25 +1,17 @@
 public class stringreversenew {
     public static void main(String[] args) {
-        String sentence = "im learning java programming";
-
-        // Split into words
+        String sentence = "welcome to java programming";
         String[] words = sentence.split(" ");
-
-        // Reverse words array
-        for (int i = 0; i < words.length / 2; i++) {
+        int n = words.length;
+        for(int i=0; i<n/2; i++){
             String temp = words[i];
-            words[i] = words[words.length - i - 1];
-            words[words.length - i - 1] = temp;
+            words[i] = words[n-i-1];
+            words[n-i-1] = temp;
         }
-
-        // Reverse characters of each word
-        for (int i = 0; i < words.length; i++) {
-            words[i] = new StringBuilder(words[i]).reverse().toString();
+        for(int i=0; i<words.length; i++){
+            words[i] = new StringBuffer(words[i]).reverse().toString();
         }
-
-        // Convert array back to String
-        String reversedSentence = String.join(" ", words);
-
-        System.out.println(reversedSentence);
-    }
+        String reversedWords = String.join(" ", words);
+        System.out.println(reversedWords);
+    }      
 }
