@@ -1,5 +1,5 @@
 
-class Main {
+class StringsInJava {
     public static void main(String[] args) {
     String s = "example";
     String reverse="";
