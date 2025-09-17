@@ -1,4 +1,4 @@
-package collections.java_collections;
+package collections.arrays;
 
 public class FactorsUsingArrays {
     public static void main(String[] args){
