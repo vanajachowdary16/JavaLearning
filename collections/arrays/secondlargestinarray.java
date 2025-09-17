@@ -1,4 +1,4 @@
-package collections.java_collections;
+package collections.arrays;
 
 public class secondlargestinarray {
     public static void main(String[] args){

@@ -8,7 +8,7 @@ public class palindromeStr {
         String str= sc.nextLine();
         int start=0;
         int end=str.length()-1;
-        boolean isPalindrome=false;
+        boolean isPalindrome=true;
         while(start<end){
             if(str.charAt(start) != str.charAt(end)) {
                 isPalindrome=false;
