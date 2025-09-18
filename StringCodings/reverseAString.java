@@ -16,3 +16,16 @@ public class reverseAString {
     }
     
 }
+
+/*
+ * String str="string string example reverse";
+ * char[] ch = str.toCharArray();
+ * int left=0, right=ch.length-1;
+ * while(left<right){
+ * char temp = ch[left];
+ * ch[left]=ch[right];
+ * ch[right]=temp;
+ * left++;
+ * right--;
+ * }
+ */

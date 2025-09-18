@@ -1,11 +1,11 @@
 public class palindromeNum {
 public static void main(String[] args){
-    int num =1211;
+    int num =121;
     int original = num;
     int reverseNum=0;
     while(num>0){
-        int digit = num%10;
-        reverseNum=reverseNum*10+digit;
+        
+        reverseNum=reverseNum*10+num%10;
         num /=10;
     }
     if(original==reverseNum){

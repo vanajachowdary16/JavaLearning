@@ -1,4 +1,4 @@
-package StringCodings;
+package stringproblems100;
 
 import java.util.Scanner;
 
