@@ -6,16 +6,16 @@ public class palindromeStr {
     public static void main(String[] args){
         Scanner sc= new Scanner(System.in);
         String str= sc.nextLine();
-        int start=0;
-        int end=str.length()-1;
+        int left=0;
+        int right=str.length()-1;
         boolean isPalindrome=true;
-        while(start<end){
-            if(str.charAt(start) != str.charAt(end)) {
+        while(left<right){
+            if(str.charAt(left) != str.charAt(right)) {
                 isPalindrome=false;
                 break;
             }
-            start++;
-            end--;
+            left++;
+            right--;
         }
         if(isPalindrome==true)
         {
