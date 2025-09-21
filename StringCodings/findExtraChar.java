@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class findExtraChar {
     public static void main(String[] args){
-        String str1="abfsds";
-        String str2="abfsdsabbcc";
+        String str1="abfsdsabbcc";
+        String str2="abfsds";
         System.out.println(findExtraCharacter(str1, str2));
 
     }

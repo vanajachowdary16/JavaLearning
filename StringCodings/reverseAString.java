@@ -6,13 +6,21 @@ public class reverseAString {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         String a = sc.nextLine();
-        String b=" ";
+        //String b=" ";
+        StringBuilder b= new StringBuilder();
         int n= a.length()-1;
         while(n>=0){
-            b=b+a.charAt(n);
+            //b=b+a.charAt(n);
+            b.append(a.charAt(n));
             n--;
         }
+        String reversed= b.toString();
         System.out.println("reverse string is: " +b);
+        if(a.equals(reversed)){
+            System.out.println("palindrome");
+        }else{
+            System.out.println("not palindrome");
+        }
     }
     
 }
