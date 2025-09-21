@@ -12,7 +12,9 @@ public class removeDuplicatesinString {
             if(!seenchar.contains(c)){
                 result.append(c);
                 seenchar.add(c);
+                
             }
+            
         }
        System.out.println(result);
 
