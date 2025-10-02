@@ -9,6 +9,14 @@ public class reversenumber {
         while(number!=0)
         {
             lastdigit=number%10;
+            if( (reversenumber > Integer.MAX_VALUE/10) || (reversenumber < Integer.MIN_VALUE/10) ) {
+                System.out.println("Reversed Number is out of Integer bounds");
+                return;
+            }
+            if(reversenumber<0 && lastdigit<0 && (reversenumber < (Integer.MIN_VALUE - lastdigit)/10)) {
+                System.out.println("Reversed Number is out of Integer bounds");
+                return;
+            }
             reversenumber=reversenumber*10+lastdigit;
             number=number/10;
         }
