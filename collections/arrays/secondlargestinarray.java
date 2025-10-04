@@ -15,6 +15,7 @@ public class secondlargestinarray {
             }
         }
         System.out.println("second largest number is : " +second);
+        System.out.println("first largest number is : " +first);
     }
     
 }

@@ -1,6 +1,6 @@
 package interviewprep;
 
-public class findmissingnumber {
+public class findmissingnumberinArray {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 5};
         int n=arr.length+1;
