@@ -16,10 +16,10 @@ public class anagramwithHashmap {
         HashMap<Character,Integer> map2 = new HashMap<>();
         for(int i=0;i<str1.length();i++){
 
-            int currentA= map1.getOrDefault(str1.charAt(i),0);
-            map1.put(str1.charAt(i),currentA+1);
-            int currentB= map2.getOrDefault(str2.charAt(i),0);
-            map2.put(str2.charAt(i),currentB+1); 
+            //int currentA= ;
+            map1.put(str1.charAt(i),map1.getOrDefault(str1.charAt(i),0)+1);
+            //int currentB= map2.getOrDefault(str2.charAt(i),0);
+            map2.put(str2.charAt(i),map2.getOrDefault(str2.charAt(i),0)+1); 
         }
         if(map1.equals(map2)){
             System.out.println("anagram");  
