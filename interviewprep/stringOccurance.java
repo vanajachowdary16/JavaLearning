@@ -1,6 +1,7 @@
 package interviewprep;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class stringOccurance {
     public static void main(String[] args){
@@ -12,15 +13,10 @@ public class stringOccurance {
          if(ch == ' '){
                 continue;
             }
-        if(map.containsKey(ch)){
-           map.put(ch, map.get(ch) + 1);
-        }
-        else{
-            map.put(ch, 1);
-        }
+        map.put(ch, map.getOrDefault(ch, 0)+1); 
     }
-    for(Character k : map.keySet()){
-        System.out.println(k+" "+map.get(k));
+    for(Map.Entry<Character, Integer> entry : map.entrySet()){
+        System.out.println(entry.getKey() + " : " + entry.getValue());
     }
 
 }
